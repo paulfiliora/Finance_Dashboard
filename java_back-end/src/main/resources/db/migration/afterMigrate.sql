@@ -6,13 +6,13 @@ VALUES
   ('someone', 'Heeza', 'User'),
   ('else', 'Sheeza', 'User');
 
-INSERT INTO SONGS
-  (TITLE, LENGTH)
+INSERT INTO SALES
+  (BUYER, PRICE, CRAFT, DATE)
 VALUES
-  ('song from seeds', '3:30'),
-  ('another song', '4:03'),
-  ('some song', '5:21'),
-  ('el song', '4:21');
+  ('Bill Hader' , '$360,738' , 'X-Wing' , '03-04-2018'),
+  ('Rick Ross' , '$430,138' , 'Naboo Royal' , '02-06-2018'),
+  ('Tom Hanks' , '$346,721' , 'Starfighter' , '01-16-2018'),
+  ('Harry Potter' , '$525,837' , 'Millenium Falcon' , '01-10-2018');
 
 INSERT INTO IDEAS
 (TITLE, DESCRIPTION)
