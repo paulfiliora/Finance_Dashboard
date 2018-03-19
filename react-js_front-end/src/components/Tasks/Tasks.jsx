@@ -6,9 +6,6 @@ import axios from 'axios'
 import Task from './Task.jsx'
 import TaskNewForm from './TaskNewForm.jsx'
 
-import IdeaNewForm from '../IdeaNewForm'
-
-
 export class Tasks extends Component{
 
     state = {

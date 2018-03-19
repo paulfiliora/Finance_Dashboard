@@ -30,7 +30,7 @@ class UserProfile extends Component {
                                                  type : "text",
                                                  bsClass : "form-control",
                                                  placeholder : "Company",
-                                                 defaultValue : "Creative Code Inc.",
+                                                 defaultValue : "Galaxy Whips",
                                                  disabled : true
                                                 },
                                                 {
@@ -38,7 +38,7 @@ class UserProfile extends Component {
                                                  type : "text",
                                                  bsClass : "form-control",
                                                  placeholder : "Username",
-                                                 defaultValue : "michael23"
+                                                 defaultValue : "StarLord"
                                                 },
                                                 {
                                                  label : "Email address",
@@ -56,14 +56,14 @@ class UserProfile extends Component {
                                                  type : "text",
                                                  bsClass : "form-control",
                                                  placeholder : "First name",
-                                                 defaultValue : "Mike"
+                                                 defaultValue : "Peter"
                                                 },
                                                 {
                                                  label : "Last name",
                                                  type : "text",
                                                  bsClass : "form-control",
                                                  placeholder : "Last name",
-                                                 defaultValue : "Andrew"
+                                                 defaultValue : "Quill"
                                                 }
                                             ]}
                                         />
@@ -75,7 +75,7 @@ class UserProfile extends Component {
                                                     type : "text",
                                                     bsClass : "form-control",
                                                     placeholder : "Home Adress",
-                                                    defaultValue : "Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
+                                                    defaultValue : "111 Columbia"
                                                 }
                                             ]}
                                         />
@@ -87,20 +87,20 @@ class UserProfile extends Component {
                                                     type : "text",
                                                     bsClass : "form-control",
                                                     placeholder : "City",
-                                                    defaultValue : "Mike"
+                                                    defaultValue : "Missouri"
                                                 },
                                                 {
                                                     label : "Country",
                                                     type : "text",
                                                     bsClass : "form-control",
                                                     placeholder : "Country",
-                                                    defaultValue : "Andrew"
+                                                    defaultValue : "USA"
                                                 },
                                                 {
                                                     label : "Postal Code",
                                                     type : "number",
                                                     bsClass : "form-control",
-                                                    placeholder : "ZIP Code"
+                                                    placeholder : "65233"
                                                 }
                                             ]}
                                         />
@@ -109,7 +109,7 @@ class UserProfile extends Component {
                                             <Col md={12}>
                                                 <FormGroup controlId="formControlsTextarea">
                                                     <ControlLabel>About Me</ControlLabel>
-                                                    <FormControl rows="5" componentClass="textarea" bsClass="form-control" placeholder="Here can be your description" defaultValue="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."/>
+                                                    <FormControl rows="5" componentClass="textarea" bsClass="form-control" placeholder="Here can be your description" defaultValue="Galaxy Guardian, Licensed salvage reseller, Intergalactic task runner."/>
                                                 </FormGroup>
                                             </Col>
                                         </Row>
@@ -130,15 +130,15 @@ class UserProfile extends Component {
                             <UserCard
                                 bgImage="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400"
                                 avatar={avatar}
-                                name="Mike Andrew"
-                                userName="michael24"
+                                name="Peter Quill"
+                                userName="StarLord"
                                 description={
                                     <span>
-                                        "Lamborghini Mercy
+                                        "Galaxy Guardian
                                         <br />
-                                        Your chick she so thirsty
+                                        Licensed salvage reseller
                                         <br />
-                                        I'm in that two seat Lambo"
+                                        Intergalactic task runner"
                                     </span>
                                 }
                                 socials={
