@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-import {Tooltip,OverlayTrigger} from 'react-bootstrap';
-import Checkbox from 'elements/CustomCheckbox/CustomCheckbox.jsx';
-import Button from 'elements/CustomButton/CustomButton.jsx';
 import axios from 'axios'
 import Task from './Task.jsx'
-import TaskNewForm from './TaskNewForm.jsx'
 
 export class Tasks extends Component{
 

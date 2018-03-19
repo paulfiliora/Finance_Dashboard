@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col, Table, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 export class SaleNewForm extends Component{
 
@@ -20,7 +20,6 @@ export class SaleNewForm extends Component{
     
     handleSubmit = (event) => {
         event.preventDefault()
-
         this.props.createSale(this.state.newSale)
     };
 

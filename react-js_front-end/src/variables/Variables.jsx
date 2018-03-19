@@ -530,7 +530,7 @@ var dataBar = {
   labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   series: [
     [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895],
-    [412, 243, 280, 580, 453, 353, 300, 364, 368, 410, 636, 695]
+    [412, 243, 280, 580, 453, 353, 300, 364, 368, 410, 536, 595]
   ]
 };
 var optionsBar = {
@@ -551,7 +551,7 @@ var responsiveBar = [
   }]
 ];
 var legendBar = {
-    names: ["Tesla Model S","BMW 5 Series"],
+    names: ["Revenue","Cost"],
     types: ["info","danger"]
 };
 

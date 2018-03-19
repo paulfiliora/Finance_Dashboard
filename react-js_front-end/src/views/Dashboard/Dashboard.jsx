@@ -7,8 +7,6 @@ import {Card} from 'components/Card/Card.jsx';
 import {StatsCard} from 'components/StatsCard/StatsCard.jsx';
 import {Tasks} from 'components/Tasks/Tasks.jsx';
 import {
-    dataPie,
-    legendPie,
     dataSales,
     optionsSales,
     responsiveSales,
@@ -43,7 +41,7 @@ class Dashboard extends Component {
                             <StatsCard
                                 bigIcon={<i className="pe-7s-wallet text-success"></i>}
                                 statsText="Revenue"
-                                statsValue="$1,345"
+                                statsValue="$102,345"
                                 statsIcon={<i className="fa fa-calendar-o"></i>}
                                 statsIconText="Last day"
                             />
@@ -52,7 +50,7 @@ class Dashboard extends Component {
                             <StatsCard
                                 bigIcon={<i className="fa fa-twitter text-info"></i>}
                                 statsText="Followers"
-                                statsValue="+45"
+                                statsValue="+545"
                                 statsIcon={<i className="fa fa-refresh"></i>}
                                 statsIconText="Updated now"
                             />

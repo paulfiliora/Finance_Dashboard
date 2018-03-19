@@ -1,5 +1,5 @@
 {
-  "name": "light-bootstrap-dashboard-react",
+  "name": "Finsy Dashboard",
   "version": "1.1.0",
   "private": true,
   "proxy": "http://localhost:8080",

@@ -6,7 +6,7 @@ export class UserCard extends Component{
         return (
             <div className="card card-user">
                 <div className="image">
-                    <img src={this.props.bgImage} alt="User Image"/>
+                    <img src={this.props.bgImage} alt="User"/>
                 </div>
                 <div className="content">
                     <div className="author">
