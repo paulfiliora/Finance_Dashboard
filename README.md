@@ -43,5 +43,5 @@ A Full-Stack App combining back-end & front-end technologies
 
     Include an external case study that demonstrates a similar problem/solution
 
-    ![DashboardView](https://i.imgur.com/9zUCeoo.png?1)
-    ![SalesView](https://i.imgur.com/qhTQseK.png?1)
+![DashboardView](https://i.imgur.com/9zUCeoo.png?1)
+![SalesView](https://i.imgur.com/qhTQseK.png?1)
