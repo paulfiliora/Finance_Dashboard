@@ -3,7 +3,6 @@ import { Button, Form, FormControl, FormGroup, ControlLabel } from 'react-bootst
 
 export class SaleNewForm extends Component{
 
-    
     state = {
         newSale: {}
     }
@@ -17,7 +16,6 @@ export class SaleNewForm extends Component{
         this.setState({ newSale: updatedNewSale })
     };
 
-    
     handleSubmit = (event) => {
         event.preventDefault()
         this.props.createSale(this.state.newSale)

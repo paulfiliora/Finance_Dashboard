@@ -4,39 +4,75 @@ import axios from 'axios'
 import { Grid, Row, Col, Table } from 'react-bootstrap';
 
 import Card from 'components/Card/Card.jsx';
-import Sale from 'components/Sales/Sale.jsx';
-import SaleNewForm from 'components/Sales/SaleNewForm.jsx';
-import {thArray} from 'variables/Variables.jsx';
+import {Tasks} from 'components/Tasks/Tasks.jsx';
+import TaskNewForm from 'components/Tasks/TaskNewForm.jsx';
+
 
 class TasksView extends Component {
 
     state = {
-        sales: []
+        ideas: []
     }
 
     async componentWillMount() {
         try {
-            const response = await axios.get('/sales')
-            this.setState({ sales: response.data })
+            const response = await axios.get('/ideas')
+            this.setState({ ideas: response.data })
         } catch (error) {
-            console.log('Error retrieving sales data!')
+            console.log('Error retrieving ideas!')
             console.log(error)
         }
     }
 
-    createSale = async (sale, index) => {
+    createIdea = async (idea, index) => {
         try {
-            const newSaleResponse = await axios.post(`/sales`, sale)
+            const newIdeaResponse = await axios.post(`/ideas`, idea)
 
-            const updatedSalesList = [...this.state.sales]
-            updatedSalesList.push(newSaleResponse.data)
-            this.setState({sales: updatedSalesList})
+            const updatedIdeasList = [...this.state.ideas]
+            updatedIdeasList.push(newIdeaResponse.data)
+            this.setState({ideas: updatedIdeasList})
 
         } catch(error) {
             console.log('Error creating new User!')
             console.log(error)
         }
     }
+
+    handleIdeaChange = (event, index) => {
+        const attributeToChange = event.target.name
+        const newValue = event.target.value
+
+        const updatedIdeasList = [...this.state.ideas]
+        const ideaToUpdate = updatedIdeasList[index]
+        ideaToUpdate[attributeToChange] = newValue
+        
+        this.setState({ideas: updatedIdeasList})
+    }
+
+    updateIdea = async (index) => {
+        try {
+            const ideaToUpdate = this.state.ideas[index]
+            await axios.patch(`/ideas/${ideaToUpdate.id}`, ideaToUpdate)
+        } catch(error) {
+            console.log('Error updating idea!')
+            console.log(error)
+        }
+    }
+
+    deleteIdea = async (ideaId, index) => {
+        try {
+            await axios.delete(`/ideas/${ideaId}`)
+            
+            const updatedIdeasList = [...this.state.ideas]
+            updatedIdeasList.splice(index, 1)
+            this.setState({ideas: updatedIdeasList})
+
+        } catch (error) {
+            console.log(`Error deleting Task with ID of ${ideaId}`)
+            console.log(error)
+        }
+    }
+
 
     render() {
         return (
@@ -45,11 +81,11 @@ class TasksView extends Component {
                     <Row>
                         <Col md={12}>
                             < Card
-                                title="New Sale"
-                                category="Create a new sales record"
+                                title="New task"
+                                category="Create a new task"
                                 ctTableFullWidth ctTableResponsive
                                 content={
-                                    <SaleNewForm createSale={this.createSale}/>
+                                    <TaskNewForm createIdea={this.createIdea}/>
                                 }
                             />
                         </Col>
@@ -57,31 +93,12 @@ class TasksView extends Component {
                     <Row>
                         <Col md={12}>
                             <Card
-                                title="Sales"
-                                category="Recent sales summary"
+                                title="Tasks"
+                                category="To Do List"
                                 ctTableFullWidth ctTableResponsive
                                 content={
                                     <Table striped hover>
-                                        <thead>
-                                            <tr>
-                                                {
-                                                    thArray.map((prop, key) => {
-                                                        return (
-                                                        <th  key={key}>{prop}</th>
-                                                        );
-                                                    })
-                                                }
-                                            </tr>
-                                        </thead>
-                                        {this.state.sales.map((sale, index) => {
-                                                return (
-                                                    <Sale
-                                                    {...sale}
-                                                    key={index}
-                                                    index={index}/>
-                                                )
-                                            })
-                                        }
+                                            <Tasks />
                                     </Table>
                                 }
                             />
