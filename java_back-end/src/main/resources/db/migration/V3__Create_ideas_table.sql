@@ -1,5 +1,4 @@
 create table IDEAS (
   ID serial,
-  TITLE varchar(100),
-  DESCRIPTION VARCHAR(400)
+  TITLE varchar(100)
 )

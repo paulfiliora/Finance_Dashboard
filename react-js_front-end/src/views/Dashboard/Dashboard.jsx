@@ -11,11 +11,10 @@ import {
     optionsSales,
     responsiveSales,
     legendSales,
-    dataBar,
-    optionsBar,
-    responsiveBar,
     legendBar
 } from 'variables/Variables.jsx';
+
+import RevenueGraph from "components/Graphs/RevenueGraph.jsx";
 
 class Dashboard extends Component {
     createLegend(json){
@@ -108,12 +107,7 @@ class Dashboard extends Component {
                                 statsIcon="fa fa-check"
                                 content={
                                     <div className="ct-chart">
-                                        <ChartistGraph
-                                            data={dataBar}
-                                            type="Bar"
-                                            options={optionsBar}
-                                            responsiveOptions={responsiveBar}
-                                        />
+                                        <RevenueGraph />
                                     </div>
                                 }
                                 legend={

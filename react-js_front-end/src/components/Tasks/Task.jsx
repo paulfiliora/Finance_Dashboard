@@ -33,7 +33,7 @@ export class Task extends Component{
                         <OverlayTrigger placement="top" overlay={remove}>
                             <Button
                                 bsStyle="danger"
-                                simple
+                                simple 
                                 type="button"
                                 bsSize="xs"
                                 onClick={() => this.props.deleteIdea(this.props.id, this.props.index)}>

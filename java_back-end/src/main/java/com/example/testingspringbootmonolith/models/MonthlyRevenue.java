@@ -5,17 +5,17 @@ import javax.persistence.*;
 
 @Data
 @AllArgsConstructor @NoArgsConstructor @Getter @Setter
-@Entity @Table(name = "IDEAS")
-public class Idea {
+@Entity @Table(name = "MONTHLYREVENUE")
+public class MonthlyRevenue {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@Column(name = "TITLE")
-	private String title;
+	@Column(name = "REVENUE")
+	private Integer revenue;
 
-	public Idea(String title, String description) {
-		this.title = title;
-	}
+	@Column(name = "COST")
+	private Integer cost;
+
 }

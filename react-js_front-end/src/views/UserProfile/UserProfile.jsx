@@ -152,7 +152,7 @@ class UserProfile extends Component {
                         </Col>
 
                     </Row>
-                </Grid>>
+                </Grid>
             </div>
         );
     }

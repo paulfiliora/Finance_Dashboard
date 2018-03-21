@@ -12,9 +12,7 @@ export class Tasks extends Component{
     async componentWillMount() {
         try {
             const response = await axios.get('/ideas')
-            // const UsersResponse = await axios.get('/users')
             this.setState({ ideas: response.data })
-            // this.setState({ users: UsersResponse.data })
         } catch (error) {
             console.log('Error retrieving ideas!')
             console.log(error)

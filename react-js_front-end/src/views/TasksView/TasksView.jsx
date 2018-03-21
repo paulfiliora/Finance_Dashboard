@@ -8,7 +8,7 @@ import Sale from 'components/Sales/Sale.jsx';
 import SaleNewForm from 'components/Sales/SaleNewForm.jsx';
 import {thArray} from 'variables/Variables.jsx';
 
-class TableList extends Component {
+class TasksView extends Component {
 
     state = {
         sales: []
@@ -93,4 +93,4 @@ class TableList extends Component {
     }
 }
 
-export default TableList;
+export default TasksView;

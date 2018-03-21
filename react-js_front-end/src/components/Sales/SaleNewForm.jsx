@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Form, FormControl, FormGroup, ControlLabel } from 'react-bootstrap';
 
 export class SaleNewForm extends Component{
 
@@ -9,7 +9,7 @@ export class SaleNewForm extends Component{
     }
 
     handleChange = (event) => {
-        const attributeToChange = event.target.name;
+        const attributeToChange = event.target.id;
         const newValue = event.target.value;
 
         const updatedNewSale = { ...this.state.newSale }
@@ -26,37 +26,25 @@ export class SaleNewForm extends Component{
     render(){
 
         return(
-                <tr>
-                    <form onSubmit={this.handleSubmit}>
-                        <td>
-                            <input
-                                name="buyer"
-                                type="text"
-                                onChange={this.handleChange} />
-                        </td>
-                        <td>
-                            <input
-                                name="price"
-                                type="text"
-                                onChange={this.handleChange} />
-                        </td>
-                        <td>
-                            <input
-                                name="craft"
-                                type="text"
-                                onChange={this.handleChange} />
-                        </td>
-                        <td>
-                            <input
-                                name="date"
-                                type="text"
-                                onChange={this.handleChange} />
-                        </td>
-                        <td>
-                            <Button type="submit" bsStyle="success">Add Sale</Button>
-                        </td>
-                    </form>
-                </tr>
+            <Form onSubmit={this.handleSubmit} inline>
+                <FormGroup>
+                    <ControlLabel>Buyer</ControlLabel>{' '}
+                    <FormControl type="text" id="buyer" placeholder="Jane Doe" onChange={this.handleChange}/>
+                </FormGroup>{' '}
+                <FormGroup>
+                    <ControlLabel>Price</ControlLabel>{' '}
+                    <FormControl type="text" id="price" placeholder="$100,000" onChange={this.handleChange}/>
+                </FormGroup>{' '}
+                <FormGroup >
+                    <ControlLabel>Craft</ControlLabel>{' '}
+                    <FormControl type="text" id="craft" placeholder="Apollo13" onChange={this.handleChange}/>
+                </FormGroup>{' '}
+                <FormGroup >
+                    <ControlLabel>Date</ControlLabel>{' '}
+                    <FormControl type="text" id="date" placeholder="01-01-2001" onChange={this.handleChange}/>
+                </FormGroup>{' '}
+                <Button type="submit">Add Sale</Button>
+            </Form>
         )
     }
 }
