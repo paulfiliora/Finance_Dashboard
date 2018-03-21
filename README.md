@@ -1,9 +1,5 @@
-# Finance_Dashboard
-
-API back-end written in Java, front-end written in React JS
-
-
-# FINSY, A sales and campaign management dashboard for small businesses
+# FINSY 
+## A sales and campaign management dashboard for small businesses
 
 #### Overview & Technologies
 
