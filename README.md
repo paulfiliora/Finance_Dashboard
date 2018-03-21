@@ -43,18 +43,15 @@ A Full-Stack App combining back-end & front-end technologies
     management complexity. With the application being simple enough, multiple modules with well 
     defined APIs and low operational overhead will be implemented.
 
-    As requested, the client requested some articles on remaining a monolith to help affirm their decision.
-    [Monolith Defense](https://www.infoq.com/articles/monolith-defense-part-1 "Monolith Defense")
-    [Monolith Defense pt 2](https://www.infoq.com/articles/monolith-defense-part-2 "Monolith Defense part 2")
-
-
     Phase 1 - Define sales requirements & strategy, document valuable datapoints 
     to assist in management & growth
     Phase 2 - Build a Java Spring Bootstrapped environment with neessary data tables 
     managed through a RESTful API
     Phase 3 - Design & build a client application using React.js, integrated with the API
 
-    Include an external case study that demonstrates a similar problem/solution
-
+As requested, the client requested some articles on remaining a monolith to help affirm their decision.
+[Monolith Defense](https://www.infoq.com/articles/monolith-defense-part-1 "Monolith Defense")
+[Monolith Defense pt 2](https://www.infoq.com/articles/monolith-defense-part-2 "Monolith Defense part 2")
+    
 ![DashboardView](https://i.imgur.com/9zUCeoo.png?1)
 ![SalesView](https://i.imgur.com/qhTQseK.png?1)
