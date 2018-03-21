@@ -50,10 +50,9 @@ A Full-Stack App combining back-end & front-end technologies
     Phase 3 - Design & build a client application using React.js, integrated with the API
 
     As requested, the client requested some articles on remaining a monolith to help affirm their decision.
+    https://www.infoq.com/articles/monolith-defense-part-1 "Monolith Defense"
+    https://www.infoq.com/articles/monolith-defense-part-2 "Monolith Defense part 2"
 
-
-![](https://www.infoq.com/articles/monolith-defense-part-1 "Monolith Defense")
-![](https://www.infoq.com/articles/monolith-defense-part-2 "Monolith Defense part 2")
 
 ![DashboardView](https://i.imgur.com/9zUCeoo.png?1)
 ![SalesView](https://i.imgur.com/qhTQseK.png?1)
